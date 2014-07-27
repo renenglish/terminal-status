@@ -7,8 +7,13 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
-'.workspace':
+'.platform-darwin .workspace':
   'shift-enter': 'terminal-status:toggle'
   'cmd-shift-t': 'terminal-status:new'
   'cmd-shift-j': 'terminal-status:next'
   'cmd-shift-k': 'terminal-status:prev'
+'.platform-win32 .workspace, .platform-linux .workspace':
+  'shift-enter': 'terminal-status:toggle'
+  'ctrl-shift-t': 'terminal-status:new'
+  'ctrl-shift-j': 'terminal-status:next'
+  'ctrl-shift-k': 'terminal-status:prev'
